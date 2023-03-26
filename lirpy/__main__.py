@@ -53,23 +53,23 @@ def main():
         p2 = (0, 0, 0)
         match args.axis:
             case "+X":
-                p1 = (x, minx + r + y, miny + r + z)
-                p2 = (x + d, maxx + r + y, maxy + r + z)
+                p1 = (x, minx - r + y, miny - r + z)
+                p2 = (x + d, maxx - r + y, maxy - r + z)
             case "-X":
-                p1 = (x, minx + r + y, miny + r + z)
-                p2 = (x - d, maxx + r + y, maxy + r + z)
+                p1 = (x, minx - r + y, miny - r + z)
+                p2 = (x - d, maxx - r + y, maxy - r + z)
             case "+Y":
-                p1 = (minx + r + x, y, miny + r + z)
-                p2 = (maxx + r + x, y + d, maxy + r + z)
+                p1 = (minx - r + x, y, miny - r + z)
+                p2 = (maxx - r + x, y + d, maxy - r + z)
             case "-Y":
-                p1 = (minx + r + x, y, miny + r + z)
-                p2 = (maxx + r + x, y - d, maxy + r + z)
+                p1 = (minx - r + x, y, miny - r + z)
+                p2 = (maxx - r + x, y - d, maxy - r + z)
             case "+Z":
-                p1 = (minx + r + x, miny + r + y, z)
-                p2 = (maxx + r + x, maxy + r + y, z + d)
+                p1 = (minx - r + x, miny - r + y, z)
+                p2 = (maxx - r + x, maxy - r + y, z + d)
             case "-Z":
-                p1 = (minx + r + x, miny + r + y, z)
-                p2 = (maxx + r + x, maxy + r + y, z - d)
+                p1 = (minx - r + x, miny - r + y, z)
+                p2 = (maxx - r + x, maxy - r + y, z - d)
         cuboids.append((p1, p2))
     print("#sel clear")
     for p1, p2 in cuboids:
