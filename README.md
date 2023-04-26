@@ -43,11 +43,12 @@ Requires Python >= 3.10 *and* `poetry`
 
 ## Example:
 ```shell
-$ python -m lirpy -472 58 570 -r 7 -d 1 --dump-steps
+lirpy --x=-485 --y=40 --z=596 --output-type=baritone --dump-steps circle -r 7
 ```
 ```
 Center: -485 40 596
-Radius: 7
+Outer Radius: 7
+Inner Radius: 0
 Depth: 0
 Along axis: -Y
 Step 0:

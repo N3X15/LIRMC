@@ -25,3 +25,6 @@ class Rect:
             ymin=min(self.min.y, self.max.y),
             ymax=max(self.min.y, self.max.y),
         )
+
+    def isPointIn(self, x: int, y: int) -> bool:
+        return self.min.x <= x <= self.max.x and self.min.y <= y <= self.max.y

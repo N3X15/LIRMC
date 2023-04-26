@@ -40,5 +40,5 @@ class Mask:
     def maskOffFromRect(self, rect: Rect) -> None:
         for y in range(self.height):
             for x in range(self.width):
-                if rect.min.x <= x <= rect.max.x and rect.min.y <= y <= rect.max.y:
+                if rect.isPointIn(x, y):
                     self.data[self.xy2idx(x, y)] = False
