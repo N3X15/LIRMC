@@ -2,6 +2,8 @@
 
 Largest Interior Rectangle for Python
 
+The purpose of LIRPy is to find the largest rectangle that can fit within the shape defined by a 2D boolean grid.  It can also repeat this operation until the mask is completely represented by a list of successively smaller rects. In short, this library can cut up shapes into rectangles.
+
 This was originally made for a stupid Minecraft project for the purpose of making as few Baritone selections as possible when designating a cylinder, but it should work in any other context as well.
 
 I also hate numpy with a passion for mysterious reasons I can't even explain to myself.  Therefore, this project doesn't use it.
@@ -303,3 +305,7 @@ Step 13:
 #sel 1 -485 40 603
 #sel 2 -485 40 603
 ```
+
+## Visualized
+![javaw_2023-03-26_14-11-18](https://user-images.githubusercontent.com/110073/227816801-68ed2653-2cdf-454c-b901-9fb930d5fa23.png)
+
